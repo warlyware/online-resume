@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+	.container{
+		max-width: 970px;
+	}
+}
+
+.jumbotron {
+	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/pretty-bg_zpsjebszvzp.png');
+	background-size: cover;
+}
+
+.bio {
+	padding-top: 80px;
+}
+
+.bio-heading {
+/*	padding-left: 40px;*/
+	font-size: 1.3em;
+}
+
+.bio-text {
+	font-size: 1.2em;	
+}
+
+.draft {
+	padding-top: 80px;
+}
