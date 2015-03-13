@@ -4,8 +4,66 @@
 	}
 }
 
+@media (max-width: 767px) {
+	.text-center-xs {
+		text-align: center;
+	}
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+	text-align: left;
+	margin-right: -4px;
+}
+
+.name-seperator {
+	font-size:20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 100;
+}
+
+.tech-proficiency {
+	font-size: 1.8em;
+	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves-full_zps8xdztaff.png');
+	background-size: cover;
+	background-color: #B8D8E3;
+	
+}
+
+.tech-proficiency .glyphicon {
+	color: orange;
+}
+
+.tech-type {
+	font-size: 1em;
+	padding-left: 20px;
+}
+
+.tech-row {
+	background-color: rgba(95, 140,170, 0.4);
+	border: 1px solid rgba(95, 140,170, 0.6);
+	border-radius: 10px;
+	padding-top: 6px;
+	border-style: inset;
+}
+
+.voffset {
+	margin-top: 15px;
+}
+
+.font-small-caps {
+	font-variant: small-caps;
+}
+
+.navbar-background {
+
+	
+}
+
 .jumbotron {
-	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves_zpskw6nc3ic.png');
+	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves%203_zpsqdwdqzty.png');
 	background-size: cover;
 	background-color: #B8D8E3;
 }
