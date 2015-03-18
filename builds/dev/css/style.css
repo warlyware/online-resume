@@ -10,12 +10,20 @@
 /* Create class for centering text for displays under 767px */
 @media (max-width: 767px) {
 
-
 	.text-center-xs {
 		text-align: center;
 	}
 }
 
+@media screen and (max-width: 500px) {
+	
+	.jumbotron-main {
+		background-image: none !important;
+	}
+	.tech-proficiency {
+		background-image: none !important;	
+	}
+}
 
 /*#################*/
 /* General Styling */
