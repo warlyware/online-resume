@@ -1,85 +1,163 @@
+/* Keep max width of container at 970px */
 @media (min-width: 1200px) {
 	.container{
 		max-width: 970px;
 	}
 }
 
+
+
+/* Create class for centering text for displays under 767px */
 @media (max-width: 767px) {
+
+
 	.text-center-xs {
 		text-align: center;
 	}
 }
 
+
+/*#################*/
+/* General Styling */
+/*#################*/
+
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	padding: 30px 0 0;
+}
+
+h1 {
+	font-family: 'Poiret One';
+}
+
+p {
+	font-family: 'Forum';
+	font-weight: 100;
+	font-size: 1.2em;
+}
+
 .col-centered {
 	display: inline-block;
 	float: none;
-	text-align: left;
 	margin-right: -4px;
+	text-align: left;
 }
 
-.name-seperator {
-	font-size:20px;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-weight: 100;
-}
-
-.tech-proficiency {
-	font-size: 1.8em;
-	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves-full_zps8xdztaff.png');
-	background-size: cover;
-	background-color: #B8D8E3;
-	
-}
-
-.tech-proficiency .glyphicon {
-	color: orange;
-}
-
-.tech-type {
-	font-size: 1em;
-	padding-left: 20px;
-}
-
-.tech-row {
-	background-color: rgba(95, 140,170, 0.4);
-	border: 1px solid rgba(95, 140,170, 0.6);
-	border-radius: 10px;
-	padding-top: 6px;
-	border-style: inset;
-}
-
-.voffset {
-	margin-top: 15px;
+.container-wide {
+	padding: 0;
+	width: 100%;
 }
 
 .font-small-caps {
 	font-variant: small-caps;
 }
 
-.navbar-background {
+.navbar-right {
+	padding-top: 2px;
+	font-family: 'Comfortaa';
+	font-weight: 500;
+	font-size: 1.2em;
+}
 
+.navbar-brand {
+	font-family: 'Comfortaa';
+	font-weight: 200;
+	font-size: 1.8em;
+}
+
+.navbar-background {
 	
 }
 
-.jumbotron {
-	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves%203_zpsqdwdqzty.png');
-	background-size: cover;
-	background-color: #B8D8E3;
+.no-overflow {
+	overflow-x: hidden;	
 }
 
-.bio {
-	padding-top: 80px;
+.voffset {
+	margin-top: 15px;
 }
+
+.well {
+	min-width: 100%;
+}
+
+
+/*##########*/
+/* Bio page */
+/*##########*/
+
+/* Tech proficiency section */
 
 .bio-heading {
-/*	padding-left: 40px;*/
 	font-size: 1.3em;
 }
 
-.bio-text {
-	font-size: 1.2em;	
+.bio-lead {
+	font-size: 1.2em;
 }
+
+.bio-text {
+	/*font-size: 1.2em;	*/
+}
+
+.jumbotron-main {
+	background-color: #B8D8E3;
+	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves%203_zpsqdwdqzty.png');
+	background-size: cover;
+	box-shadow: 2px 35px 20px rgba(95, 140,170, 0.7) inset;	
+	height: 100%;
+	padding: 50px 0 30px 0;
+}
+
+.professions-text {
+	font-family: 'Poiret One';
+	font-size: 1.5em;
+	line-height: 1.7em;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.tech-proficiency {
+	background-color: #B8D8E3;
+	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves-full_zpswmnf258y.png');
+	background-size: cover;
+	box-shadow: 0px 5px 20px rgba(95, 140,170, 0.7) inset;	
+	font-size: 1.8em;
+}
+
+.tech-proficiency .glyphicon {
+	color: #FFF428;
+	text-shadow: 2px 2px 10px black;
+	padding-top: 5px;
+}
+
+.tech-row {
+	background-color: rgba(95, 140,170, 0.2);
+	border: 1px solid rgba(95, 140,170, 0.5);
+	border-radius: 10px;
+	box-shadow: 2px 2px 15px rgba(95, 140,170, 0.7) inset;	
+	border-style: inset;
+	padding-top: 6px;
+}
+
+.tech-type {
+	font-size: 1em;
+	font-family: 'Comfortaa';
+	padding-left: 20px;
+}
+
+
+/*#################*/
+/*Copy-Editing Page*/
+/*#################*/
 
 .draft {
 	padding-top: 80px;

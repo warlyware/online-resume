@@ -4,73 +4,84 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>copy-editing / front-end webdesign</title>
-	<!-- AngularJS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
-	<!-- jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
+	<title>copy-editing / front-end webdesign / graphic design</title>
+	<!-- External Files -->
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One|Comfortaa:400,300|Forum' rel='stylesheet' type='text/css'>
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
 	<body>
-			<nav class="navbar navbar-default navbar-fixed-top navbar-background">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-
-						<a class="navbar-brand" ui-sref="bio">Dan Ward  <span class="name-seperator">|</span>  danward@gmail.com</a>
-
-
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown">
-							
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copy-Editing <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">		
-									<li><a ui-sref="paper1">Paper 1</a></li>
-									<li><a ui-sref="paper2">Paper 2</a></li>
-									<li><a ui-sref="paper3">Paper 3</a></li>
-									
-								</ul>
-							</li>
-
-
-							<li class="dropdown">
-							
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Web Design <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">		
-									<li><a href="https://www.github.com/warlyware" target="_blank">GitHub Profile</a></li>									
-								</ul>
-							</li>
-
-
-							<li class="dropdown">
-							
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Graphic Design <span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">		
-									<li><a href="https://www.behance.net/danwardfl" target="_blank">Behance Profile</a></li>									
-								</ul>
-							</li>
-
-						</ul>
-					</div>
+		<!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top navbar-background">
+			<div class="container">
+				<!-- Navbar header -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Navbar-brand -->
+					<a class="navbar-brand" ui-sref="bio">Dan Ward</a>
 				</div>
-			</nav>
-	
-			<div ui-view></div>
-					
-	<script src="js/script.js"></script>
+				
+				<!-- Navbar-right -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+
+						<!-- Copy-editing dropdown -->
+						<li class="dropdown">						
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Copy-Editing <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">		
+								<li><a ui-sref="paper1">Paper 1</a></li>
+								<li><a ui-sref="paper2">Paper 2</a></li>
+								<li><a ui-sref="paper3">Paper 3</a></li>
+								
+							</ul>
+						</li>
+
+						<!-- Web design dropdown -->
+						<li class="dropdown">						
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Web Design <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">		
+								<li><a href="https://www.github.com/warlyware" target="_blank">GitHub Profile</a></li>									
+							</ul>
+						</li>
+
+						<!-- Graphic design dropdown -->
+						<li class="dropdown">						
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Graphic Design <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">		
+								<li><a href="https://www.behance.net/danwardfl" target="_blank">Behance Profile</a></li>									
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="mailto:danward@gmail.com">danward@gmail.com</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Main UI -->
+		<div ui-view></div>
+
+		<!-- Concatonated JavaScript Files -->
+		<script src="js/script.js"></script>
 	</body>
 </html>

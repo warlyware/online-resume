@@ -1,4 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+//#############
+//#  /app.js  #
+//#############
+
+
 var myApp = angular.module('myApp', ['ui.router', 'angular-parallax']);
 
 myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -30,18 +35,51 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 	// });
 
 }]);
+//###############
+//#  /hello.js  #
+//###############
+
+ var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
+    $.fn.modal.Constructor.prototype.setScrollbar = function () {
+        oldSSB.apply(this);
+        if (this.scrollbarWidth) $('.navbar-fixed-top').css('padding-right', this.scrollbarWidth);
+    }
+
+    var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
+    $.fn.modal.Constructor.prototype.resetScrollbar = function () {
+        oldRSB.apply(this);
+        $('.navbar-fixed-top').css('padding-right', '');
+    }
+
+
 console.log("Thanks for looking under the hood!  Please visit my GitHub page if you want to see more: https://github.com/warlyware");
+//#########################
+//#  /controllers/bio.js  #
+//#########################
+
 myApp.controller('BioCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
 
 }]);
+//###########################
+//#  /controllers/draft.js  #
+//###########################
+
 myApp.controller('DraftCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
 	$scope.chosenDraft = $stateParams.whichdraft;
 	$scope.drafts = ["Draft 1", "Draft 2"];
 	console.log(chosenDraft);
 }]);
+//###########################
+//#  /controllers/paper.js  #
+//###########################
+
 myApp.controller('PaperCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
 
 }]);
+//##############################
+//#  /controllers/parallax.js  #
+//##############################
+
 myApp.controller('ParallaxCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
 
 }]);
@@ -56,15 +94,12 @@ angular.module('angular-parallax', [
       parallaxVerticalOffset: '@',
       parallaxHorizontalOffset: '@',
     },
-    link: function($scope, elem, $attrs) {
+    link: function($scope, elem, attrs) {
       var setPosition = function () {
-        // horizontal positioning
-        elem.css('left', $scope.parallaxHorizontalOffset + "px");
-
         var calcValY = $window.pageYOffset * ($scope.parallaxRatio ? $scope.parallaxRatio : 1.1 );
         if (calcValY <= $window.innerHeight) {
           var topVal = (calcValY < $scope.parallaxVerticalOffset ? $scope.parallaxVerticalOffset : calcValY);
-          elem.css('top', topVal + "px");
+          elem.css('transform','translate(' + $scope.parallaxHorizontalOffset + 'px, ' +topVal+ 'px)');
         }
       };
 

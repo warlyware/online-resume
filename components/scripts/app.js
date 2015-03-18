@@ -1,3 +1,8 @@
+//#############
+//#  /app.js  #
+//#############
+
+
 var myApp = angular.module('myApp', ['ui.router', 'angular-parallax']);
 
 myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
