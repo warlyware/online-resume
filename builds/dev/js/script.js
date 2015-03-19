@@ -23,11 +23,21 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 		controller: 'PaperCtrl',
 		templateUrl: 'views/paper1.html'
 	})
-    .state('drafts', {
-		url: '/draft/:whichdraft',
-		controller: 'DraftCtrl',
-		templateUrl: 'views/paper1.html'
-	})	
+    .state('paper2', {
+		url: '/paper2',
+		controller: 'PaperCtrl',
+		templateUrl: 'views/paper2.html'
+	})
+    .state('paper3', {
+		url: '/paper3',
+		controller: 'PaperCtrl',
+		templateUrl: 'views/paper3.html'
+	});
+ //    .state('drafts', {
+	// 	url: '/draft/:whichdraft',
+	// 	controller: 'DraftCtrl',
+	// 	templateUrl: 'views/paper1.html'
+	// })	
  //    .state('paper1.drafts', {
 	// 	url: '/drafts',
 	// 	controller: 'DraftCtrl',
@@ -39,25 +49,13 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 //#  /hello.js  #
 //###############
 
- var oldSSB = $.fn.modal.Constructor.prototype.setScrollbar;
-    $.fn.modal.Constructor.prototype.setScrollbar = function () {
-        oldSSB.apply(this);
-        if (this.scrollbarWidth) $('.navbar-fixed-top').css('padding-right', this.scrollbarWidth);
-    }
-
-    var oldRSB = $.fn.modal.Constructor.prototype.resetScrollbar;
-    $.fn.modal.Constructor.prototype.resetScrollbar = function () {
-        oldRSB.apply(this);
-        $('.navbar-fixed-top').css('padding-right', '');
-    }
-
-
 console.log("Thanks for looking under the hood!  Please visit my GitHub page if you want to see more: https://github.com/warlyware");
+
 //#########################
 //#  /controllers/bio.js  #
 //#########################
 
-myApp.controller('BioCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
+myApp.controller('BioCtrl', ['$scope', '$http', '$state', '$stateParams', function($scope, $http, $state, $stateParams) {
 
 }]);
 //###########################

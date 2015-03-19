@@ -39,17 +39,22 @@ html, body {
 }
 
 body {
-	padding: 30px 0 0;
+	padding: 0px 0 0;
 }
 
-h1 {
-	font-family: 'Poiret One';
+h1, h2 {
+	font-family: 'Comfortaa';
+	font-weight: 400;
 }
 
-p {
+h3, h4, h5, h6, {
+	font-family: 'Comfortaa';
+}
+
+p.body-copy {
 	font-family: 'Forum';
-	font-weight: 100;
-	font-size: 1.2em;
+	font-weight: 400;
+	font-size: 1.4em;
 }
 
 .col-centered {
@@ -68,6 +73,10 @@ p {
 	font-variant: small-caps;
 }
 
+.main-ui {
+	padding: 50px 0px 50px 0px;
+}
+
 .navbar-right {
 	padding-top: 2px;
 	font-family: 'Comfortaa';
@@ -77,7 +86,7 @@ p {
 
 .navbar-brand {
 	font-family: 'Comfortaa';
-	font-weight: 200;
+	font-weight: 400;
 	font-size: 1.8em;
 }
 
@@ -133,6 +142,12 @@ p {
 	padding-top: 10px;
 }
 
+.rocketship {
+	font-family: 'Forum';
+	font-size: 5.0em;
+	font-weight: 700;
+}
+
 .tech-proficiency {
 	background-color: #B8D8E3;
 	background-image: url('http://i47.photobucket.com/albums/f154/uninvisible/blue-leaves-full_zpswmnf258y.png');
@@ -157,7 +172,7 @@ p {
 }
 
 .tech-type {
-	font-size: 1em;
+	font-size: 0.9em;
 	font-family: 'Comfortaa';
 	padding-left: 20px;
 }
@@ -167,6 +182,11 @@ p {
 /*Copy-Editing Page*/
 /*#################*/
 
-.draft {
-	padding-top: 80px;
+.paper {
+	padding-top: 20px;
+}
+
+.paper-info {
+	font-family: "Forum";
+	font-size: 1.2em;
 }

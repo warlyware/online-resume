@@ -22,11 +22,21 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 		controller: 'PaperCtrl',
 		templateUrl: 'views/paper1.html'
 	})
-    .state('drafts', {
-		url: '/draft/:whichdraft',
-		controller: 'DraftCtrl',
-		templateUrl: 'views/paper1.html'
-	})	
+    .state('paper2', {
+		url: '/paper2',
+		controller: 'PaperCtrl',
+		templateUrl: 'views/paper2.html'
+	})
+    .state('paper3', {
+		url: '/paper3',
+		controller: 'PaperCtrl',
+		templateUrl: 'views/paper3.html'
+	});
+ //    .state('drafts', {
+	// 	url: '/draft/:whichdraft',
+	// 	controller: 'DraftCtrl',
+	// 	templateUrl: 'views/paper1.html'
+	// })	
  //    .state('paper1.drafts', {
 	// 	url: '/drafts',
 	// 	controller: 'DraftCtrl',
