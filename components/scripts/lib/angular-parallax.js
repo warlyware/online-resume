@@ -1,3 +1,7 @@
+//##############################
+//#  /lib/angular-parallax.js  #
+//##############################
+
 'use strict';
 
 angular.module('angular-parallax', [

@@ -57,6 +57,7 @@ console.log("Thanks for looking under the hood!  Please visit my GitHub page if 
 
 myApp.controller('BioCtrl', ['$scope', '$http', '$state', '$stateParams', function($scope, $http, $state, $stateParams) {
 
+
 }]);
 //###########################
 //#  /controllers/draft.js  #
@@ -81,6 +82,10 @@ myApp.controller('PaperCtrl', ['$scope', '$rootScope', '$state', '$stateParams',
 myApp.controller('ParallaxCtrl', ['$scope', '$rootScope', '$state', '$stateParams', function($scope, $rootScope, $state, $stateParams) {
 
 }]);
+//##############################
+//#  /lib/angular-parallax.js  #
+//##############################
+
 'use strict';
 
 angular.module('angular-parallax', [
